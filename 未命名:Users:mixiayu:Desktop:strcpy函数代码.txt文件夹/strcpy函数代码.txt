@@ -1,0 +1,1 @@
+#include <iostream>char* Strcpy(char*src){    int len=0;    while(*src++!='\0'){        len++;        src++;    }    char* ptr=(char*)malloc(len+1);    if(src==0||ptr==0)        return NULL;    while(*src!=0){        ptr=src;        src++;        ptr++;    }    *ptr='\0';    return ptr;}
